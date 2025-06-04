@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کلینیک تخصصی پوست و زیبایی شجاعی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #fafafa;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .doctor-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/cosmetic-brush.png" class="h-12" alt="کلینیک شجاعی لوگو">
+                    <a href="#" class="text-xl font-bold text-rose-600 mr-2">کلینیک شجاعی</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6 space-x-reverse">
+                    <a href="#home" class="text-gray-700 hover:text-rose-600 transition">صفحه اصلی</a>
+                    <a href="#services" class="text-gray-700 hover:text-rose-600 transition">خدمات ما</a>
+                    <a href="#doctors" class="text-gray-700 hover:text-rose-600 transition">پزشکان</a>
+                    <a href="#about" class="text-gray-700 hover:text-rose-600 transition">درباره ما</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-rose-600 transition">نظرات بیماران</a>
+                    <a href="#contact" class="text-gray-700 hover:text-rose-600 transition">تماس با ما</a>
+                    <a href="#" class="bg-rose-600 text-white px-4 py-2 rounded-full hover:bg-rose-700 transition">نوبت دهی آنلاین</a>
+                </div>
+                
+                <button class="md:hidden text-gray-700 focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden bg-white py-4 px-2 mt-2 rounded-lg shadow-lg" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="text-gray-700 hover:text-rose-600 transition">صفحه اصلی</a>
+                    <a href="#services" class="text-gray-700 hover:text-rose-600 transition">خدمات ما</a>
+                    <a href="#doctors" class="text-gray-700 hover:text-rose-600 transition">پزشکان</a>
+                    <a href="#about" class="text-gray-700 hover:text-rose-600 transition">درباره ما</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-rose-600 transition">نظرات بیماران</a>
+                    <a href="#contact" class="text-gray-700 hover:text-rose-600 transition">تماس با ما</a>
+                    <a href="#" class="bg-rose-600 text-white px-4 py-2 rounded-full text-center hover:bg-rose-700 transition">نوبت دهی آنلاین</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-white" id="home">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">کلینیک تخصصی پوست و زیبایی شجاعی</h1>
+            <p class="text-xl md:text-2xl mb-8">ارائه بهترین خدمات زیبایی و پوست با استفاده از پیشرفته‌ترین تکنولوژی‌ها</p>
+            <div class="flex justify-center space-x-4 space-x-reverse">
+                <a href="#" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-3 rounded-full text-lg transition">نوبت دهی آنلاین</a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-rose-600 px-6 py-3 rounded-full text-lg transition">خدمات ما</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-rose-600 mb-2">+۵۰۰۰</div>
+                    <div class="text-gray-600">بیمار راضی</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-rose-600 mb-2">+۲۰</div>
+                    <div class="text-gray-600">خدمت تخصصی</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-rose-600 mb-2">۱۵</div>
+                    <div class="text-gray-600">پزشک متخصص</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-rose-600 mb-2">۱۰</div>
+                    <div class="text-gray-600">سال تجربه</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50" id="services">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">خدمات تخصصی ما</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">ما با استفاده از پیشرفته‌ترین تجهیزات و تکنیک‌های روز دنیا، بهترین خدمات زیبایی و پوست را به شما ارائه می‌دهیم.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-rose-600 mb-4">
+                        <i class="fas fa-syringe text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">تزریق ژل و بوتاکس</h3>
+                    <p class="text-gray-600 mb-4">تزریق حرفه‌ای ژل و بوتاکس توسط متخصصین با تجربه برای جوانسازی و فرم‌دهی صورت</p>
+                    <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">اطلاعات بیشتر <i class="fas fa-arrow-left mr-2"></i></a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-rose-600 mb-4">
+                        <i class="fas fa-spa text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">لیفتینگ بدون جراحی</h3>
+                    <p class="text-gray-600 mb-4">لیفت و جوانسازی صورت با روش‌های غیرجراحی مانند هایفوتراپی و نخ گذاری</p>
+                    <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">اطلاعات بیشتر <i class="fas fa-arrow-left mr-2"></i></a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-rose-600 mb-4">
+                        <i class="fas fa-laser text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">لیزر موهای زائد</h3>
+                    <p class="text-gray-600 mb-4">از بین بردن موهای زائد با پیشرفته‌ترین دستگاه‌های لیزر برای پوست‌های مختلف</p>
+                    <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">اطلاعات بیشتر <i class="fas fa-arrow-left mr-2"></i></a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-rose-600 mb-4">
+                        <i class="fas fa-cut text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">جراحی زیبایی</h3>
+                    <p class="text-gray-600 mb-4">انواع جراحی‌های زیبایی صورت و بدن با بالاترین استانداردهای پزشکی</p>
+                    <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">اطلاعات بیشتر <i class="fas fa-arrow-left mr-2"></i></a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-rose-600 mb-4">
+                        <i class="fas fa-allergies text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">درمان پوستی</h3>
+                    <p class="text-gray-600 mb-4">درمان آکنه، لک، جوش و مشکلات پوستی با جدیدترین روش‌های درمانی</p>
+                    <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">اطلاعات بیشتر <i class="fas fa-arrow-left mr-2"></i></a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-rose-600 mb-4">
+                        <i class="fas fa-pump-soap text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">پاکسازی پوست</h3>
+                    <p class="text-gray-600 mb-4">پاکسازی عمیق پوست و بخور گیاهان با دستگاه‌های پیشرفته برای پوستی شفاف</p>
+                    <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">اطلاعات بیشتر <i class="fas fa-arrow-left mr-2"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 rounded-full text-lg transition">مشاهده همه خدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16" id="about">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:ml-12">
+                    <img src="https://images.unsplash.com/photo-1551608873-8d6d64ff871f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="کلینیک شجاعی" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">درباره کلینیک شجاعی</h2>
+                    <p class="text-gray-600 mb-4">کلینیک تخصصی پوست و زیبایی شجاعی با بیش از 10 سال سابقه درخشان در زمینه ارائه خدمات تخصصی پوست، زیبایی و لیزر فعالیت می‌کند. ما با بهره‌گیری از دانش روز و تجهیزات پیشرفته، آماده ارائه بهترین خدمات با بالاترین کیفیت به شما عزیزان هستیم.</p>
+                    <p class="text-gray-600 mb-6">تیم پزشکی کلینیک شجاعی متشکل از متخصصین باتجربه و مجرب در زمینه‌های مختلف پوست و زیبایی است که همواره با دقت و حساسیت بالا به درمان و زیبایی شما می‌پردازند.</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-rose-600 mr-2"></i>
+                            <span class="text-gray-700">مجموعه‌ای از متخصصین با تجربه و دلسوز</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-rose-600 mr-2"></i>
+                            <span class="text-gray-700">استفاده از پیشرفته‌ترین دستگاه‌های روز دنیا</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-rose-600 mr-2"></i>
+                            <span class="text-gray-700">محیطی آرام، بهداشتی و حرفه‌ای</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-rose-600 mr-2"></i>
+                            <span class="text-gray-700">پشتیبانی و پیگیری پس از درمان</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="inline-block mt-8 bg-rose-600 hover:bg-rose-700 text-white px-6 py-3 rounded-full transition">اطلاعات بیشتر</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="py-16 bg-gray-50" id="doctors">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">تیم تخصصی ما</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">متخصصین پوست و زیبایی کلینیک شجاعی آماده ارائه بهترین خدمات به شما هستند</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Doctor 1 -->
+                <div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1550839737-6ad823b1d96c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="دکتر مریم شجاعی" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">دکتر مریم شجاعی</h3>
+                        <p class="text-rose-600 mb-4">متخصص پوست و مو</p>
+                        <p class="text-gray-600 mb-4">فارغ التحصیل دانشگاه علوم پزشکی تهران با 12 سال سابقه فعالیت تخصصی</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 2 -->
+                <div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="دکتر علی محمدی" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">دکتر علی محمدی</h3>
+                        <p class="text-rose-600 mb-4">جراح پلاستیک</p>
+                        <p class="text-gray-600 mb-4">فارغ التحصیل دانشگاه شهید بهشتی با 15 سال تجربه در جراحی‌های زیبایی</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 3 -->
+                <div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="دکتر فاطمه رضایی" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">دکتر فاطمه رضایی</h3>
+                        <p class="text-rose-600 mb-4">متخصص لیزر و زیبایی</p>
+                        <p class="text-gray-600 mb-4">دارای گواهینامه‌های بین‌المللی در زمینه لیزر و روش‌های غیرجراحی زیبایی</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 4 -->
+                <div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="دکتر سارا حیدری" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">دکتر سارا حیدری</h3>
+                        <p class="text-rose-600 mb-4">متخصص پوست و کاشت مو</p>
+                        <p class="text-gray-600 mb-4">فارغ التحصیل دانشگاه شیراز با تخصص در درمان بیماری‌های پوست و کاشت مو</p>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-gray-900"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-white hover:bg-gray-100 text-rose-600 border border-rose-600 px-8 py-3 rounded-full text-lg transition">تمامی پزشکان</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16" id="testimonials">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">نظرات بیماران ما</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">آنچه بیماران درباره تجربه خود در کلینیک شجاعی می‌گویند</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"تجربه بسیار خوبی در کلینیک شجاعی داشتم. دکتر شجاعی بسیار با حوصله و با دقت، جلسات لیزر من را انجام دادند و نتیجه فوق‌العاده بود. محیط کلینیک بسیار تمیز و مجهز است."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="مینا احمدی" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">مینا احمدی</h4>
+                            <p class="text-gray-500 text-sm">بیمار لیزر موهای زائد</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"برای درمان آکنه به کلینیک شجاعی مراجعه کردم. روش درمانی که دکتر محمدی پیشنهاد دادند کاملاً علمی و حساب‌شده بود. بعد از 3 ماه درمان، پوست من کاملاً پاکسازی شده و بسیار راضی هستم."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="رضا کریمی" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">رضا کریمی</h4>
+                            <p class="text-gray-500 text-sm">بیمار درمان آکنه</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"تزریق ژل لب در کلینیک شجاعی انجام دادم و بسیار راضی هستم. دکتر رضایی با مهارت بالا و ظرافت خاصی این کار را انجام دادند که نتیجه طبیعی و زیبایی داشته باشد."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="سارا محمدی" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">سارا محمدی</h4>
+                            <p class="text-gray-500 text-sm">بیمار تزریق ژل</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 rounded-full text-lg transition">مشاهده نظرات بیشتر</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="py-16 bg-rose-50">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-rose-600 text-white p-10 flex items-center">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">نوبت دهی آنلاین</h2>
+                            <p class="mb-6">می‌توانید از طریق فرم روبرو برای دریافت وقت ملاقات با پزشکان کلینیک شجاعی اقدام نمایید. همکاران ما در اسرع وقت با شما تماس خواهند گرفت.</p>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-phone-volume text-xl mr-4"></i>
+                                    <div>
+                                        <p class="text-sm">تماس با ما</p>
+                                        <p class="font-bold">۰۲۱-۱۲۳۴۵۶۷۸</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-xl mr-4"></i>
+                                    <div>
+                                        <p class="text-sm">آدرس کلینیک</p>
+                                        <p class="font-bold">تهران، خیابان ولیعصر، پلاک ۱۲۳۴</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-clock text-xl mr-4"></i>
+                                    <div>
+                                        <p class="text-sm">ساعات کاری</p>
+                                        <p class="font-bold">شنبه تا چهارشنبه: ۹ صبح تا ۹ شب<br>پنجشنبه: ۹ صبح تا ۵ عصر</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-10">
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-bold mb-2">نام و نام خانوادگی</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-bold mb-2">شماره تماس</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-bold mb-2">خدمت مورد نظر</label>
+                                <select id="service" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                                    <option value="">-- انتخاب کنید --</option>
+                                    <option value="laser">لیزر موهای زائد</option>
+                                    <option value="botox">تزریق ژل و بوتاکس</option>
+                                    <option value="skin">درمان پوستی</option>
+                                    <option value="surgery">جراحی زیبایی</option>
+                                    <option value="other">سایر خدمات</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="doctor" class="block text-gray-700 font-bold mb-2">پزشک مورد نظر (اختیاری)</label>
+                                <select id="doctor" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                                    <option value="">-- نمی‌دانم --</option>
+                                    <option value="shojaei">دکتر مریم شجاعی</option>
+                                    <option value="mohammadi">دکتر علی محمدی</option>
+                                    <option value="rezaei">دکتر فاطمه رضایی</option>
+                                    <option value="heidari">دکتر سارا حیدری</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="date" class="block text-gray-700 font-bold mb-2">تاریخ مورد نظر (اختیاری)</label>
+                                <input type="date" id="date" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="note" class="block text-gray-700 font-bold mb-2">توضیحات (اختیاری)</label>
+                                <textarea id="note" rows="3" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-rose-600 hover:bg-rose-700 text-white py-3 px-6 rounded-lg font-bold transition">درخواست نوبت</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">آخرین مقالات</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">مقالات تخصصی درباره مراقبت از پوست، زیبایی و جدیدترین روش‌های درمانی</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c87e5145aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="مراقبت از پوست در تابستان" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-rose-600 text-sm font-semibold">مراقبت از پوست</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">بهترین روش‌های مراقبت از پوست در فصل تابستان</h3>
+                        <p class="text-gray-600 mb-4">در این مقاله به بررسی مهم‌ترین نکات مراقبتی پوست در هوای گرم تابستان و جلوگیری از آسیب‌های ناشی از نور خورشید می‌پردازیم...</p>
+                        <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">ادامه مطلب <i class="fas fa-arrow-left mr-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="تفاوت‌های بوتاکس و ژل" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-rose-600 text-sm font-semibold">زیبایی صورت</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">تفاوت‌های تزریق بوتاکس و ژل و کاربردهای هر کدام</h3>
+                        <p class="text-gray-600 mb-4">بوتاکس و ژل هر دو از روش‌های محبوب جوانسازی صورت هستند اما کاربردها و نتایج کاملاً متفاوتی دارند. در این مقاله به بررسی کامل...</p>
+                        <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">ادامه مطلب <i class="fas fa-arrow-left mr-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1532635241-17ec1f00ad41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="درمان آکنه" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-rose-600 text-sm font-semibold">درمان پوستی</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">جدیدترین روش‌های درمان آکنه در سال ۲۰۲۳</h3>
+                        <p class="text-gray-600 mb-4">آکنه از شایع‌ترین مشکلات پوستی است که روش‌های درمانی آن دائماً در حال پیشرفت است. در این مقاله به بررسی روش‌های نوین درمان...</p>
+                        <a href="#" class="text-rose-600 hover:text-rose-700 font-semibold">ادامه مطلب <i class="fas fa-arrow-left mr-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-white hover:bg-gray-100 text-rose-600 border border-rose-600 px-8 py-3 rounded-full text-lg transition">مقالات بیشتر</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-gray-50" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">تماس با ما</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">در صورت داشتن هر گونه سوال یا پیشنهاد می‌توانید با ما در تماس باشید</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:ml-12">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">اطلاعات تماس</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-rose-600 text-xl mt-1 mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">آدرس کلینیک</h4>
+                                    <p class="text-gray-600">تهران، خیابان ولیعصر، بالاتر از میدان ونک، پلاک ۱۲۳۴، طبقه سوم</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-rose-600 text-xl mt-1 mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">شماره تماس</h4>
+                                    <p class="text-gray-600 mb-1">۰۲۱-۱۲۳۴۵۶۷۸</p>
+                                    <p class="text-gray-600">۰۹۱۲-۱۲۳۴۵۶۷</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-rose-600 text-xl mt-1 mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">پست الکترونیک</h4>
+                                    <p class="text-gray-600">info@shojaeiclinic.ir</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-rose-600 text-xl mt-1 mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">ساعات کاری</h4>
+                                    <p class="text-gray-600 mb-1">شنبه تا چهارشنبه: ۹ صبح تا ۹ شب</p>
+                                    <p class="text-gray-600">پنجشنبه: ۹ صبح تا ۵ عصر</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">ما را در شبکه‌های اجتماعی دنبال کنید</h4>
+                            <div class="flex space-x-4 space-x-reverse">
+                                <a href="#" class="text-blue-500 hover:text-blue-700 text-2xl"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-blue-700 hover:text-blue-900 text-2xl"><i class="fab fa-telegram"></i></a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-blue-800 hover:text-blue-900 text-2xl"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">فرم تماس با ما</h3>
+                        
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="contact-name" class="block text-gray-700 font-bold mb-2">نام و نام خانوادگی</label>
+                                    <input type="text" id="contact-name" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="contact-email" class="block text-gray-700 font-bold mb-2">پست الکترونیک</label>
+                                    <input type="email" id="contact-email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label for="contact-phone" class="block text-gray-700 font-bold mb-2">شماره تماس</label>
+                                <input type="tel" id="contact-phone" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label for="contact-subject" class="block text-gray-700 font-bold mb-2">موضوع</label>
+                                <input type="text" id="contact-subject" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label for="contact-message" class="block text-gray-700 font-bold mb-2">پیام شما</label>
+                                <textarea id="contact-message" rows="5" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full mt-6 bg-rose-600 hover:bg-rose-700 text-white py-3 px-6 rounded-lg font-bold transition">ارسال پیام</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.783649635887!2d51.38875651527046!3d35.70990718018739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDQyJzM1LjYiTiA1McKwMjMnMjIuNSJF!5e0!3m2!1sen!2sus!4v1623256000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">درباره کلینیک شجاعی</h3>
+                    <p class="text-gray-400">کلینیک تخصصی پوست و زیبایی شجاعی با بیش از 10 سال سابقه درخشان، ارائه‌دهنده بهترین خدمات زیبایی و پوست با استفاده از پیشرفته‌ترین تکنولوژی‌ها می‌باشد.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">لینک‌های سریع</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">صفحه اصلی</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">خدمات ما</a></li>
+                        <li><a href="#doctors" class="text-gray-400 hover:text-white transition">پزشکان</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">درباره ما</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">نظرات بیماران</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">تماس با ما</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">خدمات کلینیک</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">تزریق ژل و بوتاکس</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">لیفتینگ بدون جراحی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">لیزر موهای زائد</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">درمان پوستی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">جراحی زیبایی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">پاکسازی پوست</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">اشتراک در خبرنامه</h3>
+                    <p class="text-gray-400 mb-4">با عضویت در خبرنامه از آخرین تخفیف‌ها و مقالات تخصصی مطلع شوید.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="پست الکترونیک" class="px-4 py-3 rounded-r-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-rose-600 hover:bg-rose-700 text-white px-4 py-3 rounded-l-lg transition"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-bold mb-3">ما را دنبال کنید</h4>
+                        <div class="flex space-x-4 space-x-reverse">
+                            <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white text-xl transition"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© ۲۰۲۳ کلیه حقوق مادی و معنوی این سایت متعلق به کلینیک تخصصی پوست و زیبایی شجاعی می‌باشد.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Button -->
+    <div class="fixed bottom-8 left-8 z-50">
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="hidden fixed bottom-8 right-8 z-50 bg-rose-600 hover:bg-rose-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
